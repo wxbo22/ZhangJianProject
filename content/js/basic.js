@@ -33,12 +33,21 @@ $(function () {
 
     // 设计团队
     $('.DesignTeam-list li').on('mouseenter', function () {
-        $(this).find('.DesignTeam-member-name').stop().animate({'bottom':'-100px'});
+        $(this).find('.DesignTeam-member-name').stop().animate({
+            'bottom': '-100px'
+        });
     });
     $('.DesignTeam-list li').on('mouseleave', function () {
-        $(this).find('.DesignTeam-member-name').stop().animate({'bottom':'0px'});
+        $(this).find('.DesignTeam-member-name').stop().animate({
+            'bottom': '0px'
+        });
     });
 
-
+    // checkBox 样式
+    $('.check-red').iCheck({
+        checkboxClass: 'icheckbox_square-red',
+        radioClass: 'iradio_square-red',
+        increaseArea: '20%' // optional
+    });
 
 })
