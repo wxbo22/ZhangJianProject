@@ -10,6 +10,14 @@ $(function () {
         $(this).find('.icon').removeClass('tranbottom');
     });
 
+    // 全部商品分类
+    $(".head-nav-product").on('mouseenter', function () {
+        $(this).find('.head-nav-module').stop().slideDown(500);
+    });
+    $(".head-nav-product").on('mouseleave', function () {
+        $(this).find('.head-nav-module').stop().slideUp("fast");
+    });
+
     // 顶部BANNER 
     var mySwiper = $('.swiper-container').swiper({
         loop: true,
