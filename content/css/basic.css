@@ -1110,3 +1110,63 @@ a.foot-kefu i {
     right: 20px;
     z-index: 80;
 }
+
+/* 首页广位在BANNER下面 */
+
+.home-ad-ul{
+    margin: 30px 0 0 0;
+}
+
+.home-ad-ul li{
+    width: 331px;
+    margin:0px 1px;
+    float: left;
+    height: 220px;
+    position:relative;
+}
+
+.home-ad-ul li a{
+    display: block;
+    width:100%;
+    height: 220px;
+    text-decoration: none;
+}
+
+.ad-one{
+      background: url(../img/abbgone.jpg) top left no-repeat; 
+      background-size:100% 100%;
+}
+
+.ad-two{
+      background: url(../img/abbgtwo.jpg) top left no-repeat;
+      background-size:100% 100%;  
+}
+
+.ad-third{
+      background: url(../img/abbgthird.jpg) top left no-repeat;
+      background-size:100% 100%;  
+}
+
+.home-ad-img{
+    position: absolute;
+    right:25px;
+    bottom:20px;
+}
+
+.home-ad-txt{
+    padding:20px 0 0 30px; 
+}
+
+.home-ad-txt > .home-ad-txtcn{
+    font-size: 30px;
+}
+
+.home-ad-txt > .home-ad-txten{
+    font-size: 12px;
+}
+
+
+.home-ad-txt span{
+    display: block;
+    color: #fff;
+}
