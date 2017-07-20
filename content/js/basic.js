@@ -58,4 +58,19 @@ $(function () {
         increaseArea: '20%' // optional
     });
 
+    // 首页BANNER
+    var mySwiperHome = $('.swiper-container-home').swiper({
+        loop: true,
+        autoplay: 5000
+    });
+
+    $('.home-banner-left').on('click', function () {
+        mySwiperHome.swipePrev();
+    });
+
+    $('.home-banner-right').on('click', function () {
+        mySwiperHome.swipeNext();
+    });
+
+
 })
