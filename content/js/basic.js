@@ -72,5 +72,22 @@ $(function () {
         mySwiperHome.swipeNext();
     });
 
+    // 首页商品一楼Banner
+    var productmySwiper01 = $('.pro-swiper-container01').swiper({
+        loop: true,
+        autoplay: 5000,
+        onSetWrapperTransition: function (swiper) {
+            var currNum = swiper.activeIndex;
+            $("#JUlProButton li").eq(currNum).siblings().removeClass("pbuttonhover");
+            $("#JUlProButton li").eq(currNum).addClass("pbuttonhover");
+        }
+    });
+
+    $("#JUlProButton li").each(function (idx) {
+        $(this).on("mouseenter", function () {
+            productmySwiper01.swipeTo(idx, 1000, false);
+        });
+    });
+
 
 })
