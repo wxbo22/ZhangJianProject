@@ -1082,6 +1082,7 @@ a.foot-kefu i {
 
 
 /* 首页-banner */
+
 .home-banner-bg {
     overflow: hidden;
     position: relative;
@@ -1111,62 +1112,159 @@ a.foot-kefu i {
     z-index: 80;
 }
 
+
 /* 首页广位在BANNER下面 */
 
-.home-ad-ul{
+.home-ad-ul {
     margin: 30px 0 0 0;
 }
 
-.home-ad-ul li{
+.home-ad-ul li {
     width: 331px;
-    margin:0px 1px;
+    margin: 0px 1px;
     float: left;
     height: 220px;
-    position:relative;
+    position: relative;
 }
 
-.home-ad-ul li a{
+.home-ad-ul li a {
     display: block;
-    width:100%;
+    width: 100%;
     height: 220px;
     text-decoration: none;
 }
 
-.ad-one{
-      background: url(../img/abbgone.jpg) top left no-repeat; 
-      background-size:100% 100%;
+.ad-one {
+    background: url(../img/abbgone.jpg) top left no-repeat;
+    background-size: 100% 100%;
 }
 
-.ad-two{
-      background: url(../img/abbgtwo.jpg) top left no-repeat;
-      background-size:100% 100%;  
+.ad-two {
+    background: url(../img/abbgtwo.jpg) top left no-repeat;
+    background-size: 100% 100%;
 }
 
-.ad-third{
-      background: url(../img/abbgthird.jpg) top left no-repeat;
-      background-size:100% 100%;  
+.ad-third {
+    background: url(../img/abbgthird.jpg) top left no-repeat;
+    background-size: 100% 100%;
 }
 
-.home-ad-img{
+.home-ad-img {
     position: absolute;
-    right:25px;
-    bottom:20px;
+    right: 25px;
+    bottom: 20px;
 }
 
-.home-ad-txt{
-    padding:20px 0 0 30px; 
+.home-ad-txt {
+    padding: 20px 0 0 30px;
 }
 
-.home-ad-txt > .home-ad-txtcn{
+.home-ad-txt>.home-ad-txtcn {
     font-size: 30px;
 }
 
-.home-ad-txt > .home-ad-txten{
+.home-ad-txt>.home-ad-txten {
     font-size: 12px;
 }
 
-
-.home-ad-txt span{
+.home-ad-txt span {
     display: block;
     color: #fff;
+}
+
+
+/* 一楼商品样式 */
+
+.HomeProductList-bg {
+    margin: 30px 0;
+}
+
+.Home-product-tit {
+    height: 40px;
+}
+
+.Home-product-tit-one {
+    width: 230px;
+    color: #fff;
+    height: 40px;
+    position: relative;
+}
+
+.Home-product-tit-one .Homeproduct-name {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.Homeproduct-floor {
+    position: absolute;
+    line-height: 40px;
+    left: 10px;
+    font-size: 20px;
+    top: 0;
+}
+
+.Home-product-tit-two {
+    line-height: 40px;
+    padding: 0 0 0 10px;
+    color: #8b8787;
+}
+
+.Home-product-tit-third {
+    line-height: 40px;
+}
+
+.Home-product-tit-two a {
+    color: #8b8787;
+    margin: 0 2px;
+}
+
+.bottomsolid-green {
+    border-bottom: 2px solid #469362;
+}
+
+.bottomsolid-green .Home-product-tit-one {
+    background-color: #469362;
+}
+
+.bottomsolid-green .Home-product-tit-third a {
+    color: #469362;
+}
+
+.Home-product-banner-Left {
+    width: 230px;
+    height: 310px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.Home-product-banner-Right {
+    width: 770px;
+    height: 310px;
+    background-color: #00aee9;
+}
+
+.Home-product-banner-Left-DL {
+    width: 200px;
+    margin: 0 0 0 12px;
+}
+
+.Home-product-banner-Left-DL dt {
+    line-height: 22px;
+    color: red;
+    padding: 12px 0 0 0;
+}
+
+.Home-product-banner-left-ul li {
+    width: 100px;
+    overflow: hidden;
+    float: left;
+    line-height: 22px;
+    color: #726d6d;
+}
+
+.Home-product-banner-left-ul a {
+    color: #726d6d;
 }
