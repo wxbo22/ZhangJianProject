@@ -1359,14 +1359,46 @@ a.foot-kefu i {
     font-size: 14px;
 }
 
-.Home-product-every-ul-name a{
+.Home-product-every-ul-name a {
     color: #999;
 }
 
-.preferentialprice{
+.preferentialprice {
     color: red;
 }
 
-.currprice{
-   text-decoration: line-through;
+.currprice {
+    text-decoration: line-through;
+}
+
+
+/* 首页友情链接 */
+
+.HomeLinkList-tit {
+    font-size: 18px;
+    line-height: 56px;
+    color: #7a7876;
+    border-bottom: 3px solid black;
+}
+
+.HomeLinkContent {
+    height: 150px;
+    background-color: #f6f6f6;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.HomeLinkName{
+    color: #9d9d9d;
+    display: block;
+    padding-bottom:10px;
+}
+
+.HomeLinkContent li{
+    float: left;
+    width:124px;
+    height: 70px;
+    padding:6px 0 0 0;
+    text-align: center;
 }
