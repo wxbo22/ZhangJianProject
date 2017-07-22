@@ -1389,16 +1389,41 @@ a.foot-kefu i {
     border-bottom: 1px solid #ccc;
 }
 
-.HomeLinkName{
+.HomeLinkName {
     color: #9d9d9d;
     display: block;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 
-.HomeLinkContent li{
+.HomeLinkContent li {
     float: left;
-    width:124px;
+    width: 124px;
     height: 70px;
-    padding:6px 0 0 0;
+    padding: 6px 0 0 0;
     text-align: center;
+}
+
+/* 全景图 */
+.panoramatit{
+    line-height: 56px;
+    color: #7a7876;
+    border-bottom: 3px solid black;    
+}
+
+.panoramatit .panoramatit-name{
+    font-size: 18px;
+}
+
+.panorama-bg{
+    margin: 30px 0;
+}
+
+.panoramalistUL li{
+    width:25%;
+    float: left;
+    height:250px;
+}
+
+.panoramalistUL li img{
+    width: 100%;
 }
