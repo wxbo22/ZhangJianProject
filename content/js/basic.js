@@ -147,6 +147,7 @@ $(function () {
     });
 
     changeFloor($(document).scrollTop());
+
     function changeFloor(num) {
         if (num < 1800) {
             $(".leftLocatingFloorUL li").eq(0).attr("class", "locationred");
@@ -163,4 +164,9 @@ $(function () {
         }
     }
 
+    // 右侧购物车点击事件
+    $("#Homerightshop").on("click",function(){
+         $(".rightCodeLayer").stop().fadeToggle();
+         return false;
+    });
 })

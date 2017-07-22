@@ -102,11 +102,7 @@ a {
     padding: 0 5px 0 0;
 }
 
-.top_ad .t-two {
-    padding: 0 5px 0 10px;
-}
-
-.top_ad .t-third {
+.top_ad .t-two,.top_ad .t-third {
     padding: 0 5px 0 10px;
 }
 
@@ -1630,49 +1626,166 @@ a.foot-kefu i {
 
 
 /* 左侧定位楼层楼 */
-.leftLocatingFloor{
-    position:fixed;
-    width:110px;
-    height:150px;
-    padding:14px 0 0 10px;
+
+.leftLocatingFloor {
+    position: fixed;
+    width: 110px;
+    height: 150px;
+    padding: 14px 0 0 10px;
     background-color: #fff;
-    left:30px;
-    border-radius:10px;
-    top:40%;
+    left: 30px;
+    border-radius: 10px;
+    top: 40%;
 }
 
-.leftLocatingFloorUL li{
+.leftLocatingFloorUL li {
     line-height: 30px;
 }
 
-.locationgray a{
+.locationgray a {
     color: #a3a3a3;
 }
 
-.locationgray .locationNum{
-     display: inline-block;
-     width:20px;
-     height:20px;
-     line-height:20px;
-     text-align: center;
-     margin-right:3px;
-     border-radius:50%;
-     color: #fff;
-     background-color: #a3a3a3;
+.locationgray .locationNum {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 3px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #a3a3a3;
 }
 
-.locationred a{
+.locationred a {
     color: red;
 }
 
-.locationred .locationNum{
-     display: inline-block;
-     width:20px;
-     height:20px;
-     line-height:20px;
-     text-align: center;
-     margin-right:3px;
-     border-radius:50%;
-     color: #fff;
-     background-color: red;
+.locationred .locationNum {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 3px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: red;
+}
+
+
+/* 右侧定位图标功能 */
+
+.rightFunction {
+    position: fixed;
+    right: 30px;
+    top: 30%;
+}
+
+.rightFunction > ul > li {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.FunctionOne {
+    border: 1px solid #d4d1d1;
+    background-color: #fff;
+}
+
+.FunctionTwo {
+    border: 1px solid #d41c50;
+    background-color: #d41c50;
+    position: relative;
+}
+
+.rightFunction a{
+    display: block;
+    text-decoration: none;
+}
+
+.FunctionOne span,.FunctionTwo span{
+    display: block;
+}
+
+.FunctionOne i,.FunctionTwo i{
+     font-size:36px;
+}
+
+.FunctionOne .FunctionOne-middle{
+     font-size:14px;
+}
+
+.FunctionOne a{
+    color: #d41c50;
+}
+
+.FunctionTwo a{
+    color: #fff;
+    cursor:pointer;
+}
+
+.rightCodeLayer{
+    width:210px;
+    height: 310px;
+    position: absolute;
+    right:106px;
+    top:-230px;
+    background-color: #fff;
+    border: 1px solid #d4d1d1;
+    display: none;
+}
+
+.rightCodeLayer:before{
+content: '';
+border-top: 9px solid transparent;
+border-bottom: 9px solid transparent;
+border-left: 9px solid #d4d1d1;
+position: absolute;
+bottom: 35px;
+right: -9px;
+}
+
+.rightCodeLayer:after{
+content: '';
+border-top: 9px solid transparent;
+border-bottom: 9px solid transparent;
+border-left: 9px solid #fff;
+position: absolute;
+bottom: 35px;
+right: -8px;
+}
+
+.rightCodeLayer ul{
+    margin:0 10px;
+}
+
+.rightCodeimg{
+    width: 102px;
+}
+
+.rightCodetxt{
+    width: 84px;
+    text-align: left;
+}
+
+.rightCodeLayer > ul > li{
+    padding:25px 0 25px 0;
+}
+
+.rightCodeLayer > ul > li:nth-child(1){
+border-bottom: 1px solid #d4d1d1;
+}
+
+.rctone{
+    font-size: 14px;
+    line-height:24px;
+}
+
+.rcttwo{
+    font-size: 16px;
+    color: red;
+    line-height:28px;
 }
