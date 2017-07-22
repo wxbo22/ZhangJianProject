@@ -123,7 +123,7 @@ $(function () {
         });
     });
 
-        // 首页商品四楼Banner
+    // 首页商品四楼Banner
     var productmySwiper04 = $('.pro-swiper-container04').swiper({
         loop: true,
         autoplay: 5000,
@@ -140,5 +140,27 @@ $(function () {
         });
     });
 
+    // 监听滚动条到顶部的距离，判断楼层
+    $(document).scroll(function () {
+        var topSroll = $(document).scrollTop();
+        changeFloor(topSroll)
+    });
+
+    changeFloor($(document).scrollTop());
+    function changeFloor(num) {
+        if (num < 1800) {
+            $(".leftLocatingFloorUL li").eq(0).attr("class", "locationred");
+            $(".leftLocatingFloorUL li").eq(0).siblings().attr("class", "locationgray");
+        } else if (num >= 1800 && num < 2700) {
+            $(".leftLocatingFloorUL li").eq(1).attr("class", "locationred");
+            $(".leftLocatingFloorUL li").eq(1).siblings().attr("class", "locationgray");
+        } else if (num >= 2700 && num < 3600) {
+            $(".leftLocatingFloorUL li").eq(2).attr("class", "locationred");
+            $(".leftLocatingFloorUL li").eq(2).siblings().attr("class", "locationgray");
+        } else if (num >= 3600) {
+            $(".leftLocatingFloorUL li").eq(3).attr("class", "locationred");
+            $(".leftLocatingFloorUL li").eq(3).siblings().attr("class", "locationgray");
+        }
+    }
 
 })
