@@ -89,5 +89,56 @@ $(function () {
         });
     });
 
+    // 首页商品二楼Banner
+    var productmySwiper02 = $('.pro-swiper-container02').swiper({
+        loop: true,
+        autoplay: 5000,
+        onSetWrapperTransition: function (swiper) {
+            var currNum = swiper.activeIndex;
+            $("#JUlProButton01 li").eq(currNum).siblings().removeClass("pbuttonhover");
+            $("#JUlProButton01 li").eq(currNum).addClass("pbuttonhover");
+        }
+    });
+
+    $("#JUlProButton01 li").each(function (idx) {
+        $(this).on("mouseenter", function () {
+            productmySwiper02.swipeTo(idx, 1000, false);
+        });
+    });
+
+    // 首页商品三楼Banner
+    var productmySwiper03 = $('.pro-swiper-container03').swiper({
+        loop: true,
+        autoplay: 5000,
+        onSetWrapperTransition: function (swiper) {
+            var currNum = swiper.activeIndex;
+            $("#JUlProButton02 li").eq(currNum).siblings().removeClass("pbuttonhover");
+            $("#JUlProButton02 li").eq(currNum).addClass("pbuttonhover");
+        }
+    });
+
+    $("#JUlProButton02 li").each(function (idx) {
+        $(this).on("mouseenter", function () {
+            productmySwiper03.swipeTo(idx, 1000, false);
+        });
+    });
+
+        // 首页商品四楼Banner
+    var productmySwiper04 = $('.pro-swiper-container04').swiper({
+        loop: true,
+        autoplay: 5000,
+        onSetWrapperTransition: function (swiper) {
+            var currNum = swiper.activeIndex;
+            $("#JUlProButton03 li").eq(currNum).siblings().removeClass("pbuttonhover");
+            $("#JUlProButton03 li").eq(currNum).addClass("pbuttonhover");
+        }
+    });
+
+    $("#JUlProButton03 li").each(function (idx) {
+        $(this).on("mouseenter", function () {
+            productmySwiper04.swipeTo(idx, 1000, false);
+        });
+    });
+
 
 })

@@ -1232,6 +1232,42 @@ a.foot-kefu i {
     color: #469362;
 }
 
+.bottomsolid-red {
+    border-bottom: 2px solid #b54746;
+}
+
+.bottomsolid-red .Home-product-tit-one {
+    background-color: #b54746;
+}
+
+.bottomsolid-red .Home-product-tit-third a {
+    color: #b54746;
+}
+
+.bottomsolid-blue {
+    border-bottom: 2px solid #5a779f;
+}
+
+.bottomsolid-blue .Home-product-tit-one {
+    background-color: #5a779f;
+}
+
+.bottomsolid-blue .Home-product-tit-third a {
+    color: #5a779f;
+}
+
+.bottomsolid-yellow {
+    border-bottom: 2px solid #967447;
+}
+
+.bottomsolid-yellow .Home-product-tit-one {
+    background-color: #967447;
+}
+
+.bottomsolid-yellow .Home-product-tit-third a {
+    color: #967447;
+}
+
 .Home-product-banner-Left {
     width: 230px;
     height: 310px;
