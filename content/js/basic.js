@@ -165,8 +165,21 @@ $(function () {
     }
 
     // 右侧购物车点击事件
-    $("#Homerightshop").on("click",function(){
-         $(".rightCodeLayer").stop().fadeToggle();
-         return false;
+    $("#Homerightshop").on("click", function (e) {
+        $(".rightCodeLayer").stop().fadeToggle('fast');
+        stopPropagation(e);
+        return false;
     });
-})
+
+    $(document).bind('click', function () {
+        $(".rightCodeLayer").stop().fadeToggle('fast');
+    });
+});
+
+// 防止冒泡
+function stopPropagation(e) {
+    if (e.stopPropagation)
+        e.stopPropagation();
+    else
+        e.cancelBubble = true;
+}
